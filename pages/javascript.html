@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript</title>
+        <link rel="stylesheet" href="../assets/java_style.css">
+    </head>
+        <body>
+        <button onclick="toggle()">Click me...</button>
+        <!-- first we set up the button that is triggering our javascript -->
+        <!-- note that the element doesn't need to be a <button> to work -->
+        <div id="box">
+            the box
+        </div>
+
+        </body>
+        <script>
+            function toggle() {
+              var box = document.getElementById("box");
+            //Next to the var tag, we're giving it a name!
+            //getElementById is a method. 
+              box.classList.toggle("active");
+            }
+        </script>
+    
+</html> 

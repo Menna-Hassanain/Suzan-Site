@@ -1,0 +1,268 @@
+* {/* This class is applied to EVERYTHING! */
+    box-sizing: border-box;
+    margin: 10px 5px;
+}
+/* Whatever's under the style brackets, it will be affected. */
+
+header {
+    position: absolute;
+    top: 0%;
+    left: 37%;
+    width: 100%;
+    padding: 30px, 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: palevioletred;
+    border-radius: 20px;
+}
+
+header ul li a:hover, .active {
+    background-color: bisque;
+    color: palevioletred;
+}
+
+footer {
+    position: relative;
+    top: 0%;
+    left: 37%;
+    width: 100%;
+    padding: 30px, 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: palevioletred;
+    border-radius: 20px;
+}
+
+
+
+p {
+    color:palevioletred;
+    font-size: 16px;
+    line-height: 2;
+}
+
+a {
+    color:orangered;
+    cursor: url('../assets/smooth_tip_cursor.png'), 
+    url('../assets/sharp_tip_cursor.png'),auto;
+    text-decoration: dotted;
+}
+
+
+a:hover {
+    color: orange;
+    text-decoration: dashed;
+    background-color: bisque;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* We are targeting a class here, so we need to put a period b4 it. */
+.special {
+    color: orchid;
+    background-color:rgb(224, 237, 255);
+    font-size: 18px;
+}
+
+em {
+    color:purple;
+}
+
+body {
+    background-color: rgb(242, 239, 234) ;
+    margin: 0;
+    cursor: url('../assets/sharp_tip_cursor.png')30 0, 
+    url('../assets/smooth_tip_cursor.png'),auto;
+    /* The numbers following the url cursor image link is the pivot (in pixels) when you click. */
+}
+
+embed{
+    position: relative;
+    left: 40%;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 50% 65%;
+    grid-column-gap: 40px;
+    align-items: center;
+}
+
+ol li{
+    color: palevioletred;
+    margin-left: 20px;
+}
+
+ol li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: palevioletred;
+    border-radius: 20px;
+
+}
+
+.about-grid div{
+    padding: 20px 20px;
+}
+
+.center{
+    position: relative;
+    top: 50%;
+    left: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* .content {
+    background-color: plum;
+    width: 100px;
+    height: 100px;
+    padding: 90px 20px 90px 20px;
+   /* Padding is the size of the element.
+    /* This is going clockwise: top right, bottom, left.*/
+    /* It can also be written this way (padding: 10px 20px),
+       where the top-bottom padding is the first value, and 
+       the left- right padding is the seconnd value. */
+       /* border: 10px solid blueviolet;
+       margin: 50px; */
+/* } */
+
+/* .border {
+    background-color: lightcoral;
+    width: 100px;
+    height: 100px;
+    padding: 90px 20px;
+    border: 10px solid brown;
+    margin:50px;
+    box-sizing: border-box;
+    /* bottom: 30px;
+    right: 90px; */
+    /* position: relative; */
+/* } */
+
+.container {
+    display: flex;
+    background: cornflowerblue;
+    height: 900px;
+    justify-content: flex-start;
+    align-content: flex-start;
+    gap: 2px;
+    padding: 2px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.item {
+    background: rgb(182, 237, 255);
+    color: white;
+    height: 40px;
+    margin: 10px;
+    width: 100%; /* The width is being distributed evenly.*/
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.header {
+background:rgb(61, 29, 16);
+text-align: center;
+padding: 10px;
+margin-bottom: 10px;
+}
+
+ .main-container {
+    display: flex;
+    align-content: space-between;
+    gap: 5px;
+    margin-bottom: 10px;
+    
+}
+
+.main-container div {
+    padding: 10px;
+    flex-direction: column;
+    border: 4px;    
+}
+
+.navigation-menu {
+    color: white;
+    background-color: #de9090;
+    width: 25%;
+}
+
+.center-menu {
+    background-color: #f0c7c7;
+    width: 50%;
+}
+
+.right {
+    background-color: #f9f7f8;
+    width: 50%;
+}
+
+.footer {
+    text-align: center;
+
+}
+
+@media screen and (max-width: 900px) {
+    /* This is the media querry, where things show up appropriaely in diff.
+    devices. Even a new webpage for diff. devices.*/
+    html{color: white;}
+
+    body {background-color:azure;}
+
+    p {color: rgb(61, 29, 16);}
+}
+
+@media screen and (max-width: 600px){
+    /* This is the media querry, where things show up appropriaely in diff. 
+    devices. Even a new webpage for diff. devices.*/
+
+    body{background-color: rgb(221, 193, 255);}
+
+    p {
+        color: purple;
+        font-size: 45px;
+      }
+    
+        .main-container {flex-direction: column;}
+}
